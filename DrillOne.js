@@ -1,9 +1,14 @@
 /* eslint-disable no-console */
 'use strict';
-function createGreeting(name, age) {
-  let yearOfBirth = 2019 - age;
-  return `Hi, my name is ${name}.  I was born in ${yearOfBirth}.`;
+
+function getYearOfBirth(age) {
+  return 2019 - age;
 }
 
-const greeting1 = createGreeting('Blade');
+function createGreeting(name, age) {
+  const yob = getYearOfBirth(age);
+  return `Hi, my name is ${name}.  I was born in ${yob}.`;
+}
+
+const greeting1 = createGreeting('Blade', 32);
 console.log(greeting1);
