@@ -1,7 +1,8 @@
 /* eslint-disable no-console */
 'use strict';
 function createGreeting() {
-  console.log('Hi, my name is Jaye');
+  return 'Hi, my name is Jaye';
 }
 
-createGreeting();
+const greeting1 = createGreeting();
+console.log(greeting1);
